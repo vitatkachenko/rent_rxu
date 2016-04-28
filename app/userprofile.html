@@ -1,0 +1,980 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rxu</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body class="userprofile">
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <span class="support-contacts">
+          <i class="glyphicon glyphicon-earphone"></i>+380123456789
+        </span>
+        <div class="pull-right clearfix">
+          <a href="#" class="message">
+            Messages <span class="badge">1</span>
+          </a>
+          <div class="wrapper inline-block">
+            <div class="inline-block">
+              <img src="images/rxu/blank.png" alt="avatar-of-user" class="small-avatar img-circle">
+            </div>
+            <div class="dropdown inline-block">
+              <button class="btn dropdown-toggle profile-link-dropdown no-margin" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <a href="#">Иванов Иван</a>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">View profile</a></li>
+                <li><a href="#">Manage account</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Control Panel<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-->
+    </nav>
+  </header>
+  <section class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="wrapper">
+            <img src="images/rxu/blank.png" alt="avatar-of-user" class="middle-avatar">
+            <div class="add-new-photo text-center">
+              <a href="#" class="add-new-photo-link">Добавить фото в мой профиль.</a>
+            </div>
+            <div class="short-profile-navigation">
+              <div class="profile-usertitle-name">
+                Иван
+              </div> 
+              <div class="profile-usermenu">
+                <ul class="nav">
+                  <li>
+                    <a href="#">
+                      <i class="glyphicon glyphicon-user"></i>View profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="glyphicon glyphicon-pencil"></i>Edit profile
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">Оповещения</div>
+            <div class="panel-body">
+              <div>Попросите рекомендации у друзей - вам будет легче забронировать жилье, если хозяин будет знать о вас чуть больше. 
+                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <hr>
+              <div>
+                <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                Свяжитесь с Facebook, чтобы автоматически заполнить свой профиль и сделать процесс авторизации быстрым и простым.
+                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <hr>
+              <div>Пожалуйста, подтвердите ваш адрес электронной почты, перейдя по ссылке, которую мы вам только что выслали. Если вы не получили нашего письма, <a href="#" class="underline-link">запросите новое подтверждение</a> либо 
+                <a href="#" class="underline-link">введите другой адрес.</a>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">Сообщения(0 новых)</div>
+            <div class="panel-body">
+              Когда вы пишите хозяину или отправляете ему запрос на бронирование, то его ответы вы увидите здесь.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="profile-edit-profile"> <!--вторая страничка из user_profile_account-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Edit Profile</a></span>
+            <span><a href="#" class="profile-action">Photo</a></span>
+            <span><a href="#" class="profile-action">Trust&Verification</a></span>
+            <span><a href="#" class="profile-action">Reviews</a></span>
+            <button type="button" class="btn btn-default">View Profile</button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Обязательная информация</h3>
+            </div>
+            <div class="panel-body">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Имя</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Фамилия</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Отчество</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control">
+                    <div class="info-block">
+                      Эта информация становится доступна после получения подтверждения о бронировании от другого участника.
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Я
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </label>
+                  <div class="col-sm-2">
+                    <form>
+                      <select name="select" size="1" class="form-control">
+                        <option selected value="s1">Пол</option>
+                        <option value="s2">Женщина</option>
+                        <option value="s3">Мужчина</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-9 col-sm-offset-3">
+                      <div class="info-block user-sex-info">
+                        Мы используем эти данные для анализа и никогда не делимся ими с другими пользователями.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Дата рождения
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </label>
+                  <div class="col-sm-9">
+                    <div class="select-field inline-block">
+                      <form class="form-inline"> 
+                        <select name="select" size="1" class="form-control">
+                          <option selected value="s1">Январь</option>
+                          <option value="s2">Февраль</option>
+                          <option value="s3">Март</option>
+                          <option value="s4">Апрель</option>
+                          <option value="s5">Май</option>
+                          <option value="s6">Июнь</option>
+                          <option value="s7">Июль</option>
+                          <option value="s8">Август</option>
+                          <option value="s9">Сентябрь</option>
+                          <option value="s10">Октябрь</option>
+                          <option value="s11">Ноябрь</option>
+                          <option value="s12">Декабрь</option>
+                        </select>
+                      </form>
+                    </div>
+                    <div class="select-field inline-block">
+                      <form class="form-inline">
+                        <select name="select" size="1" class="form-control">
+                          <option selected value="s1">1</option>
+                          <option value="s2">2</option>
+                          <option value="s3">3</option>
+                          <option value="s4">4</option>
+                          <option value="s5">5</option>
+                          <option value="s6">6</option>
+                          <option value="s7">7</option>
+                          <option value="s8">8</option>
+                          <option value="s9">9</option>
+                          <option value="s10">10</option>
+                          <option value="s11">11</option>
+                          <option value="s12">12</option>
+                        </select>
+                      </form>
+                    </div>
+                    <div class="select-field inline-block">
+                      <form class="form-inline">
+                        <select name="select" size="1" class="form-control">
+                          <option selected value="s1">1993</option>
+                          <option value="s2">1994</option>
+                          <option value="s3">1995</option>
+                          <option value="s4">1996</option>
+                          <option value="s5">1997</option>
+                        </select>
+                      </form>
+                    </div>
+                    <div class="info-block">
+                      Волшебный день, когда вас нашли в капусте. Мы используем эти данные только для анализа и никогда ни с кем ими не делимся.
+                    </div>
+                  </div> 
+                </div>
+              </form>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Email
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </label>
+                  <div class="col-sm-9">
+                    <input type="email" class="form-control">
+                    <div class="info-block">
+                      Мы не раскроем ваш персональный электронный адрес другим участникам RXU.
+                      <a href="#">Узнать больше</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Номер телефона
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </label>
+                  <div class="col-sm-9">
+                    <p>Номер телефона не указан</p>
+                    <form>
+                      <a href="#" class="plus-information"><i class="glyphicon glyphicon-plus"></i>Добавить номер телефона</a>
+                    </form>
+                    <div class="info-block">
+                      Эта информация становится доступна после получения подтверждения о бронировании от другого участника. Так мы все остаемся на связи.
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Расскажите о себе</label>
+                  <div class="col-sm-9">
+                    <form>
+                      <textarea class="personal-information"></textarea>
+                    </form>
+                    <div class="info-block">
+                      Расскажите другим участникам сервиса о себе, что вы ищете и т.д.
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Дополнительная информация</h3>
+            </div>
+            <div class="panel-body">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Место работы</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Rxu / Apple / Закусочная">
+                  </div>
+                </div>
+              </form>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Часовой пояс</label>
+                  <div class="col-sm-5">
+                    <form class="inline">
+                      <select name="select" size="1" class="form-control">
+                        <option selected value="s1">GMT+01:00</option>
+                        <option value="s2">GMT+02:00</option>
+                        <option value="s3">GMT+03:00</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+              </form>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Языки</label>
+                  <div class="col-sm-5">
+                    <div class="no-language">Нет</div>
+                    <a href="#" class="plus-information"><i class="glyphicon glyphicon-plus"></i>Добавить</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <button type="button" class="btn btn-standart">
+            Сохранить
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="profile-photo"> <!--третья страничка из user_profile_account-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Edit Profile</a></span>
+            <span><a href="#" class="profile-action">Photo</a></span>
+            <span><a href="#" class="profile-action">Trust&Verification</a></span>
+            <span><a href="#" class="profile-action">Reviews</a></span>
+            <button type="button" class="btn btn-default">View Profile</button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Фото в профиле</h3>
+            </div>
+            <div class="panel-body">
+              <div class="profile-photo-wrapper inline-block">
+                <img src="images/rxu/blank.png" alt="your avatar" class="img-circle big-avatar">
+              </div>
+              <div class="add-photo-wrapper inline-block">
+                <p>Четкие фото анфас важны для того, чтобы гости и хозяева могли увидеть друг друга. Сдавать квартиру красивому пейзажу немного странно! Пожалуйста, загрузите фотографию, на которой хорошо видно ваше лицо.</p>
+                <button type="button" class="btn btn-default">Сделать фото веб-камерой</button>
+                <button type="button" class="btn btn-default">Загрузить файл со своего компьютера</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="trust-verification"> <!--четвертая страничка из user_profile_account-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Edit Profile</a></span>
+            <span><a href="#" class="profile-action">Photo</a></span>
+            <span><a href="#" class="profile-action">Trust&Verification</a></span>
+            <span><a href="#" class="profile-action">Reviews</a></span>
+            <button type="button" class="btn btn-default">View Profile</button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p class="verification-way">Подтвердите свой профиль</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Подтверждение профиля - самый простой способ поддерживать доверительные отношения в сообществе RXU. Мы сверим указанные вами в профиле данные с данными в документе, удостоверяющем личность.<a href="#" class="underline-link">Узнайте больше</a></p>
+                  <p>Вы также можете выбрать только те варианты подтверждения, которые вам подходят.</p>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-standart">Подтвердить мой профиль</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Ваши подтверждения</h3>
+            </div>
+            <div class="panel-body">
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Добавить другие подтверждения</h3>
+            </div>
+            <div class="panel-body">
+              <p class="verification-way">Адрес электронной почты</p>
+              <p>Пожалуйста, подтвердите адрес своей электронной почты, нажав на ссылку в сообщении, которую мы только что отправили на: pupkin@gmail.com</p>
+              <p>Не можете найти письмо от RXU? Проверьте папку со спамом или <a href="#" class="underline-link">запросите подтверждение еще раз.</a></p>
+              <p class="verification-way">Номер телефона</p>
+              <p>Подтверждение номера телефона сделает общение более легким. Мы отправим вам код в SMS или продиктуем его по телефону. Введите код, который подтвердит номер телефона.</p>
+              <p>Не волнуйтесь, ваш номер будет показан другому участнику RXU только после подтверждения бронирования.</p>
+              <p>Номер телефона не указан</p>
+              <p><i class="glyphicon glyphicon-plus"></i>Добавить номер телефона</p>
+              <div class="panel panel-default panel-add-phone-number inline-block"> 
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label add-number">Choose a country:</label>  
+                      <select name="select" size="1" class="form-control">
+                        <option selected value="s1">Ukraine</option>
+                        <option value="s2">неUkraine</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="col-sm-4 control-label">Add a phone number</label>
+                      <div class="col-sm-8">
+                        <div class="input-group input-group-sm">
+                          <span class="input-group-addon" id="sizing-addon3">+380</span>
+                          <input type="text" class="form-control" aria-describedby="sizing-addon3">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <button type="button" class="btn btn-standart">Verify via SMS</button>
+                  <a href="#" class="pull-right underline-link">Why Verify?</a>
+                </div>
+              </div>
+              <p class="verification-way">Facebook</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Войдя через Facebook, вы обнаружите дружеские связи с гостями и хозяевами по всему миру.</p>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-default btn-lg">Связать</button>
+                </div>
+              </div>
+              <p class="verification-way">Google</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Соедините свой аккаунт в RXU с аккаунтом Google для простоты и удобства.</p>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-default btn-lg">Связать</button>
+                </div>
+              </div>
+              <p class="verification-way">Vkontakte</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Войдя через Vkontakte, вы обнаружите дружеские связи с гостями и хозяевами по всему миру.</p>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-default btn-lg">Связать</button>
+                </div>
+              </div>
+              <p class="verification-way">Twitter</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Войдя через Twitter, вы обнаружите дружеские связи с гостями и хозяевами по всему миру.</p>
+                </div>
+                <div class="col-md-6">
+                  <button type="button" class="btn btn-default btn-lg">Связать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <hr>
+  <section class="profile-reviews"> <!--пятая страничка из user_profile_account-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Edit Profile</a></span>
+            <span><a href="#" class="profile-action">Photo</a></span>
+            <span><a href="#" class="profile-action">Trust&Verification</a></span>
+            <span><a href="#" class="profile-action">Reviews</a></span>
+            <button type="button" class="btn btn-default">View Profile</button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <ul class="tabs">
+            <li class="inline-block">
+              <a class="tab-item" href="#">
+                Reviews About You
+              </a>
+            </li>
+            <li class="inline-block">
+              <a href="#" class="tab-item">
+                Reviews By You
+              </a>
+            </li>
+          </ul>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Past Reviews</h3>
+            </div>
+            <div class="panel-body">
+              Reviews are written at the end of a reservation through RXU. Reviews you’ve received will be visible both here and on your public profile. No one has reviewed you yet.
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Reviews to Write</h3>
+            </div>
+            <div class="panel-body">
+              Nobody to review right now. Looks like it’s time for another trip!
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Past Reviews You’ve Written</h3>
+            </div>
+            <div class="panel-body">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="account-notifications"> <!--шестая страничка из user_profile_account-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Notification</a></span>
+            <span><a href="#" class="profile-action">Security</a></span>
+            <span><a href="#" class="profile-action">Settings</a></span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Mobile Notifications/Text Messages</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h5>Mobile Phone</h5>
+                  <p>Receive mobile updates by regular SMS text message.</p>
+                </div>
+                <div class="col-sm-8">
+                  You can add and verify phone numbers on your account from the <a href="#" class="underline-link">Edit Profile</a> section.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h5>Push Notification</h5>
+                  <p>Receive Push Notification to your iPhone, iPod Touch, Android device or Windows phone.</p>
+                </div>
+                <div class="col-sm-8">
+                  Download the <a href="#" class="underline-link">RXU App</a> for iPhone, iPod Touch, Androoid or Windows phone and receive advanced updates through Push Notifications instead of plain text messages.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h5>Notify me when</h5>
+                  <p>Applies to both text messages & push notifications.</p>
+                </div>
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-1"><input type="checkbox" value="1"></div>
+                    <div class="col-sm-11">I receive a message from another person on RXU.</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1"><input type="checkbox" value="1"></div>
+                    <div class="col-sm-11">My outstading reservation request is accepted or declined.</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1"><input type="checkbox" value="1"></div>
+                    <div class="col-sm-11">I receive a reservation request.</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1"><input type="checkbox" value="1"></div>
+                    <div class="col-sm-11">Changes are made to me RXU account or listing.</div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Email Settings</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h5>I want to receive</h5>
+                  <p>You can disable these at any time.</p>
+                </div>
+                <div class="col-sm-8">
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <label><input type="checkbox"></label>
+                    </div>
+                    <div class="col-sm-11">
+                      General promotions, updates, news about RXU or general promotions for partner campaigns and services, user surveys, inspiration, and love from RXU.
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-1">
+                      <label><input type="checkbox"></label>
+                    </div>
+                    <div class="col-sm-11">
+                      Reservation and review reminders.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-standart pull-right">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="account-security"> <!--седьмая страничка из user_profile_account-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Notification</a></span>
+            <span><a href="#" class="profile-action">Security</a></span>
+            <span><a href="#" class="profile-action">Settings</a></span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Change Your Password</h3>
+            </div>
+            <div class="panel-body">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="old-password" class="col-md-3 control-label">Old Password</label>
+                  <div class="col-md-4">
+                    <input type="password" class="form-control" id="old-password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="old-password" class="col-md-3 control-label">New Password</label>
+                  <div class="col-md-4">
+                    <input type="password" class="form-control" id="new-password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="old-password" class="col-md-3 control-label">Confirm Password</label>
+                  <div class="col-md-4">
+                    <input type="password" class="form-control" id="confirm-password">
+                  </div>
+                </div>
+              </form>
+              <div class="info-block">
+                Tips: Use at least 8 characters. Don't re-use passwords from other websites or include obvious words like your name or email.
+              </div>
+              <hr>
+              <button class="btn btn-standart pull-right">Update Password</button>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Login Notifications</h3>
+            </div>
+            <div class="panel-body">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-md-10">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Turn on login notifications
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="info-block">
+                Login notifications are an extra security feature. When you turn them on, we'll let you know when anyone logs into your RXU account from a new browser. This help keep your account safe.
+              </div>
+              <hr>
+              <button class="btn btn-standart pull-right">Save</button>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Login History</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table login-history-table">
+                <thead class="text-left">
+                  <tr>
+                    <td>Browser/Device</td>
+                    <td>Location <i class="glyphicon glyphicon-question-sign"></i></td>
+                    <td>Recent Activity</td>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>
+                    <span class="block">Firefox</span>
+                    <span class="block small-margin-top">Windows 8</span>
+                  </td>
+                  <td>Ukraine</td>
+                  <td>1 day ago</td>
+                  <td><a href="#">Logged Out</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="block">Google Chrome</span>
+                    <span class="block small-margin-top">Windows 8</span>
+                  </td>
+                  <td>UK</td>
+                  <td>5 days ago</td>
+                  <td><a href="#">Logged Out</a></td>
+                </tr>
+              </table>
+              <hr>
+              <span class="pull-right">If you see something unfamiliar, <a href="#" class="underline-link">change your password.</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="account-settings"> <!--восьмая страничка из user_profile_account-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Notification</a></span>
+            <span><a href="#" class="profile-action">Security</a></span>
+            <span><a href="#" class="profile-action">Settings</a></span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Cancel Account</h3>
+            </div>
+            <div class="panel-body">
+              <button class="btn btn-standart">Cancel my account</button>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Cancel Account</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <h5>Tell us why you're leaving</h5>
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">I have safety concerns.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">I have privacy concerns.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">I don't find it useful.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">I don't understand how to use it.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">It's temporary; I'll be back.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox">Other.
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div>Care to tell us more?</div>
+                  <textarea class="form-control small-margin-top"></textarea>
+                  <div class="small-margin-top">Can we contact you for more details?</div>
+                  <form class="form-inline small-margin-top">
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="resolution-for-feedback">Yes
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" class="resolution-for-feedback">No
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="wrapper small-margin-top">
+                    <h5>What's going to happen</h5>
+                    <ul>
+                      <li>Your profile and any listings will disappear.</li>
+                      <li>We'll miss you terribly.</li>
+                    </ul>
+                    <button class="btn btn-standart small-margin-top">Cancel my account</button>
+                    <button class="btn btn-default small-margin-top">Don't cancel account</button>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <h5>Alternatives to cancelling</h5>
+                  <div class="wrapper small-margin-top">
+                    <a href="#" class="underline-link">Adjust my privacy settings</a>
+                    <div class="info-block">
+                      Turn off search indexing on your listing, preventing search engines such as Google and Bing from displaying your listing in their search results.
+                    </div>
+                  </div>
+                  <div class="wrapper small-margin-top">
+                    <a href="#" class="underline-link">Change notification preferences</a>
+                    <div class="info-block">
+                      Are we sending you too much email? Change your notification preferences.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Company</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Support</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Developers</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Our partners</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">© 2016 <a href="#">RXU.</a> All Rights Reserved</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <ul class="pull-right no-margin">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fag</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>

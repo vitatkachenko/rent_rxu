@@ -1,0 +1,360 @@
+.new-rent-object-header {
+	background-color: $color-grey;
+	padding: 15px;
+	color: $color-white;
+
+	a {
+		color: $color-white;
+	}
+}
+
+#num3, #num4, #num5,.radio-wrapper {
+	width: 45%;
+}
+
+.radio-wrapper {
+	vertical-align: bottom;
+	position: relative;
+    top: 3px;
+    margin-left: 5px;
+
+ 	label {
+
+	margin-bottom: 0;
+
+		input {
+			margin: 0;
+		}
+	}
+}
+
+.comfort-create-object .panel-body .row:first-child, .comfort-create-object .panel-body .row:nth-child(2), .new-rent-object-header {
+	margin-bottom: 25px;  /* тут не вдається правильно вказати селектори*/
+}
+
+.create-rent-object .col-md-7 .row:last-child, .create-rent-object .col-md-7 .row:nth-child(2)  {
+	margin: 25px -15px 25px -15px;
+}
+
+i.mandatory-field-icon {
+	font-size: $font-size-base * 0.625;
+	color: $accentual-color;
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+.short-name-object, .short-description-object {
+	margin-top: 40px;
+}
+
+.short-description-object {
+	margin-bottom: 40px;
+}
+
+.description-object-photo {
+	margin-top: 20px;
+}
+
+.photo-create-object {
+	.thumbnail {
+		margin-top: 15px;
+		position: relative;
+	}	
+}
+
+button.btn-trash {
+	background-color: $primary-color-black;
+	opacity:0.4;
+	padding: 2px 6px;
+	position: absolute;
+    top: 10px;
+    right: 4px;
+
+	i {
+		color: $color-white;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+img.add-photo-icon {
+	opacity: 0.3;
+    width: 30%;
+    padding-top: 50%;
+}
+
+span.add-photo-wrap {
+	padding-bottom: 42%;
+	padding-top: 15px;
+}
+
+.create-rent-object.no-margin {
+	
+	input[type="radio"] {
+		top: 2px;
+	    position: relative;
+	    margin-right: 5px;
+	}
+}
+
+.create-rent-object.no-margin label, .location-create-object label, .prices-create-object label, .calendar-create-object label {
+	font-weight: normal;
+}
+
+.prices-create-object {
+
+	.col-md-5 {
+	    top: 6px;
+	    color: $accentual-color;
+	}
+
+	h4 {
+		margin-bottom: 25px;
+	}
+
+	.panel.price .row:first-child {
+		margin-bottom: 15px;
+	}
+
+	span.inline-block {
+		margin-bottom: 5px;
+	}
+}
+
+.calendar-img {
+	width: 50%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.btn-success-circle {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 85px;
+	right: 50px;
+	border-radius: 50%;
+	border: none;
+}
+
+p.no-comfort {
+	text-decoration: line-through;
+	color: $color-grey;
+}
+
+.object-preview-header-wrapper {
+
+	.col-md-2.text-center i {
+		font-size: 30px;
+	}
+
+	img {
+	    width: 85px;
+	    height: 85px;
+	    border-radius: 50%;
+	}
+
+	div.pull-left {
+		margin-right: 40px;
+	}
+}
+
+.star-wrapper {
+	color: $accentual-color;
+	margin-left: 17%;
+}
+
+.owner-info {
+	img {
+		width: 85px;
+	    height: 85px;
+	    border-radius: 50%;
+	    border: 3px solid white;
+	}
+}
+
+.owner-info-wrapper {
+	background: $color-for-section;
+    border-radius: 5px;
+    padding: 30px;
+
+    h4 {
+    	margin-bottom: 20px;
+    }
+}
+
+img.round-avatar {
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+    bottom: 50px;
+    right: 20px;
+    border: 2px solid $color-white;
+}
+
+.similar-ads-wrapper {
+	.thumbnail {
+		position: relative;
+
+		.caption {
+			p {
+				font-size: $font-size-base / 1.333;
+			}
+		}
+
+		.like-apartment {
+			position: absolute;
+			right: 10px;
+		    font-size: 30px;
+		    top: 5px;
+		    opacity: 0.7;
+		}
+
+		button.button-apartment-price {
+			position: absolute;
+		    background: $primary-color-black;
+		    opacity: 0.6;
+		    color: $color-white;
+		    border: 0;
+		    bottom: 45%;
+		    font-size: $font-size-base;
+		    padding: 5px 10px;
+
+		    &:focus {
+		    	outline: none;
+		    }
+
+		    span:first-child {
+		    	font-size: $font-size-base / 1.4545;
+    			vertical-align: text-top;
+		    }
+		}
+	}
+}
+
+.my-apartment-photo-wrapper {
+	width: 20%;
+	height: auto;
+	margin-right: 20px;
+
+	img {
+		width: 100%;
+	}
+} 
+
+.my-apartment-info-wrapper {
+	width: 75%;
+	line-height: 2;
+}
+
+button.online-apartment {
+	border-radius: 50%;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background: $accentual-color;
+    color: $color-white;
+}
+
+button.delete-rent-object {
+	border-radius: 50%;
+    border: 0;
+    width: 40px;
+    height: 40px;
+
+    i {
+    	font-size: $font-size-base / 0.8;
+    	top: 4px;
+    }
+}
+
+.object-list img {
+	vertical-align: baseline;
+}
+
+.prompts-box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    text-align: right;
+    display: block;
+    margin-top: 60px;
+
+    .prompts-box-icon {
+	    background-color: $accentual-color;
+	    border-radius: 50%;
+	    display: table;
+	    height: 80px;
+	    margin: 0 auto;
+	    width: 80px;
+	    margin-top: -55px;
+
+	    span {
+		    color: $color-white;
+		    display: table-cell;
+		    text-align: center;
+		    vertical-align: middle;
+		    font-size: 40px;
+		}
+	}
+
+	.prompts-info {
+		h4 {
+			font-size: 20px;
+		    text-transform: uppercase;
+		}
+
+		& > p {
+			color: $color-grey-for-text;
+		    font-size: 14px;
+		    padding-top: 10px;
+		    text-align: justify;
+		}
+
+		& > a {
+			background-color: #03a9f4;
+		    border-radius: 2px;
+		    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+		    color: $color-white;
+		    transition: all 0.5s ease 0s;
+		}
+	}
+}
+
+.prompts-box.photo .prompts-info > p {
+	text-align: center;
+}
+
+.prompts-box.price-per-night .prompts-info > p:last-child {
+	text-align: left;
+}
+
+.location-image-wrapper {
+	height: 100px;
+
+	.location-image {
+		height: 100%;
+    	width: auto;
+	}
+}
+
+.prompts .panel-info .col-md-4, .prompts .panel-info .col-md-3 {
+	padding: 0 5px 0 5px;
+}
+
+.prompts .panel-info .col-md-4:first-child {
+    margin-left: 15px;
+}
+
+.prompts .panel-info {
+	border-color: $btn-standart-hover;
+
+	&> .panel-heading {
+		background-color: $color-panel;
+		border-color: $accentual-color;
+		color: $accentual-color;
+	}
+}

@@ -1,0 +1,15 @@
+$icon-font-path: '../fonts/';
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// bower:scss
+
+// endbower
+
+@import "components/variables";
+@import "components/mixins";
+@import "components/navbar";
+@import "components/sections";
+@import "components/userprofile";
+@import "components/modal";
+@import "components/modal-register";
+@import "components/general-styles";
+@import "components/create-new-object";

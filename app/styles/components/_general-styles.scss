@@ -1,0 +1,79 @@
+.no-margin {
+	margin: 0;
+	padding: 0;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+a {
+	color: $border-color-form;
+
+	&:hover, &:focus {
+		color: $accentual-color;
+		text-decoration: none;
+	}
+}
+
+.strong {
+	font-weight: bold;
+}
+
+a.underline-link:hover {
+	text-decoration: underline;
+}
+
+.btn-standart {
+	padding: 6px 12px;
+    background: $accentual-color;
+    color: $color-white;
+    border-radius: 4px;
+
+    &:hover {
+    	color: $color-white;
+    	background: $btn-standart-hover;
+    }
+}
+
+.small-margin-top {
+	margin-top: 10px;
+}
+
+.btn.btn-standart:focus {
+	color: $color-white;
+	outline: none;
+}
+
+.btn.btn-default:focus {
+	outline: none;
+}
+
+.small-avatar {
+	width: 30px;
+	height: 30px;
+}
+
+a.plus-information i, .resolution-for-feedback, .new-rent-object-header i, button.online-apartment {
+	margin-right: 5px;
+}
+
+.checkbox + .checkbox {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hide-part-text {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 80px;
+}

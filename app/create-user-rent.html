@@ -1,0 +1,1221 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rxu</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body class="userprofile">
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" class="message">
+                Сдать жилье <i class="glyphicon glyphicon-home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="message">
+                Messages <span class="badge">1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="message">
+                Help <i class="fa fa-question-circle"></i>
+              </a>
+            </li>
+            <li>
+              <div class="wrapper inline-block">
+                <div class="inline-block">
+                  <img src="images/rxu/blank.png" alt="avatar-of-user" class="small-avatar img-circle">
+                </div>
+                <div class="dropdown inline-block">
+                  <button class="btn dropdown-toggle profile-link-dropdown no-margin" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <a href="#">Иванов Иван</a>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">View profile</a></li>
+                    <li><a href="#">Manage account</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Log out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+  <section class="create-rent-object no-margin">
+    <div class="new-rent-object-header">
+      <div class="container">
+        <span class="pull-left">Новое жилье для сдачи в аренду</span>
+        <span class="pull-right"><i class="glyphicon glyphicon-eye-open"></i><a href="#">Предварительный просмотр</a></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="profile-action-wrapper">
+            <span><a href="#" class="profile-action">Основное</a></span>
+            <span><a href="#" class="profile-action">Описание</a></span>
+            <span><a href="#" class="profile-action">Расположение</a></span>
+            <span><a href="#" class="profile-action">Удобства</a></span>
+            <span><a href="#" class="profile-action">Фотографии</a></span>
+            <span><a href="#" class="profile-action">Безопасность жилья</a></span>
+            <span><a href="#" class="profile-action">Расценки</a></span>
+            <span><a href="#" class="profile-action">Календарь</a></span>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="sel1">Тип жилья</label><i class="glyphicon glyphicon-asterisk mandatory-field-icon"></i>
+                      <select name="select" size="1" class="form-control" id="sel1">
+                        <option selected value="квартира">квартира</option>
+                        <option value="дом">дом</option>
+                        <option value="вилла">вилла</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="sel2">Тип размещения</label>
+                      <select name="select" size="1" class="form-control" id="sel2">
+                        <option selected value="жильё целиком">Жильё целиком</option>
+                        <option value="отдельная комната">Отдельная комната</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="sel3">Вид аренды</label>
+                      <select name="select" size="1" class="form-control" id="sel3">
+                        <option selected value="долгосрочная">Долгосрочная</option>
+                        <option value="посуточно">Посуточно</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="sel4">Вмещает жильцов</label>
+                      <select name="select" size="1" class="form-control" id="sel4">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="sel5">Комнаты</label>
+                      <select name="select" size="1" class="form-control" id="sel5">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="sel6">Спален</label>
+                      <select name="select" size="1" class="form-control" id="sel6">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="sel7">Ванных комнат</label>
+                      <select name="select" size="1" class="form-control" id="sel7">
+                        <option selected value="1">Выберите</option>
+                        <option value="2">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-2">
+                  <label class="control-label" for="num1">Этаж</label>
+                  <input type="number" class="form-control" id="num1" autofocus>
+                </div>
+                <div class="col-md-2 col-md-offset-2">
+                  <label class="control-label" for="num2">Этажность</label>
+                  <input type="number" class="form-control" id="num2">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label" for="num3">Общая площадь</label>
+                    <input type="number" class="form-control inline-block" id="num3">
+                    <div class="radio-wrapper inline-block">
+                      <label><input type="radio" value="option1">кв. м.</label>
+                      <label><input type="radio" value="option2">кв. футов</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="control-label" for="num4">Жилая площадь</label>
+                    <input type="number" class="form-control inline-block" id="num4">
+                    <div class="radio-wrapper inline-block">
+                      <label><input type="radio" value="option1">кв. м.</label>
+                      <label><input type="radio" value="option2">кв. футов</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="control-label" for="num5">Площадь кухни</label>
+                    <input type="number" class="form-control inline-block" id="num5">
+                    <div class="radio-wrapper inline-block">
+                      <label><input type="radio" value="option1">кв. м.</label>
+                      <label><input type="radio" value="option2">кв. футов</label>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          <button class="btn btn-default pull-right">Далее</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="description-create-object">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h5 class="text-center">Подчеркните то, что делает ваше жилье привлекательным для людей.</h5>
+              <hr>
+              <div class="short-name-object clearfix">
+                <label class="control-label" for="textarea1">Краткое название</label>
+                <textarea class="form-control" rows="1" id="textarea1" placeholder="Уютная студия в самом центре столицы"></textarea>
+                <span class="pull-right">50 символов осталось</span>
+              </div>
+              <div class="short-description-object clearfix">
+                <label class="control-label" for="textarea1">Краткое описание</label>
+                <textarea class="form-control" rows="6" id="textarea1" placeholder="Можно добавить детали интерьера, доступные удобства или детали района"></textarea>
+                <span class="pull-right">500 символов осталось</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-default pull-left">Назад</button>
+          <button class="btn btn-default pull-right">Далее</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="location-create-object">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h5 class="text-center">С помощью этих данных жильцы ищут жилье в подходящем месте.</h5>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label for="country-sel">Страна</label>
+                  <select name="select" size="1" class="form-control" id="country-sel">
+                    <option selected value="1">Украина</option>
+                    <option value="2">Нидерланды</option>
+                    <option value="3">Польша</option>
+                  </select>
+                </div> 
+                <div class="form-group">
+                  <label for="approximate-address">Адрес</label>
+                  <input type="text" class="form-control" id="approximate-address" placeholder="Peremohy Avenue, 75/2">
+                </div>
+                <div class="form-group">
+                  <label for="specific-address">Квартира, блок, корпус</label>
+                  <input type="text" class="form-control" id="specific-address" placeholder="Квартира, код домофона">
+                </div>
+              </form>
+              <div class="row">
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="city-location">Город / Район</label>
+                      <input type="text" class="form-control" id="city-location" placeholder="Kyiv">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="specific-city-location">Регион</label>
+                      <input type="text" class="form-control" id="specific-city-location" placeholder="Kyiv city">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-group">
+                      <label for="postcode">Почтовый индекс</label>
+                      <input type="number" class="form-control" id="postcode">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <button class="btn btn-standart">Сохранить адрес</button>
+              <button class="btn btn-default">Отменить</button>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h5 class="text-center">С помощью этих данных жильцы ищут жилье в подходящем месте.</h5>
+              <hr>
+              <span><a href="#" class="underline-link">Редактировать адрес</a></span>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5081.214206994362!2d30.425947139753823!3d50.448418571926496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc3e1ec31827%3A0x6fd152af791259a8!2z0LHRg9C7LiDQhtCy0LDQvdCwINCb0LXQv9GB0LUsIDQsINCa0LjRl9Cy!5e0!3m2!1suk!2sua!4v1452539104485" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <button class="btn btn-default pull-left">Назад</button>
+          <button class="btn btn-default pull-right">Далее</button>
+        </div>
+        <div class="col-md-3">
+          <div class="prompts-box">
+            <div class="prompts-box-icon">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </div>
+            <div class="prompts-info">
+              <h4 class="text-center">Ваше местоположение конфиденциально</h4>
+              <div class="location-image-wrapper text-center">
+                <img src="images/rxu/place.png" class="location-image" alt="my-location"> 
+              </div>
+              <p>Только подтвержденные гости увидят ваш точный адрес.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="comfort-create-object">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h5 class="text-left">Общие удобства</h5>
+              <hr>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox">Туалетные принадлежности</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Телевизор</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Кабельное телевидение</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Кондиционер</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Отопление</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Интернет</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Беспроводной интернет</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Прибытие круглосуточно</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Кровать</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox">Ванна</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Балкон</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Лоджия</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Душевая кабина</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Холодильник</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Мебель</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Счётчики</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Шкаф</label>
+                  </div>
+                </div>
+              </div>
+              <h5 class="text-left">Дополнительные удобства</h5>
+              <hr>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox">Джакузи</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Стиральная машина</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Бассейн</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Сушильная машина</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Бесплатная парковка</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Спортзал</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Лифт</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Бильярд</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Микроволновая печь</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Персональный компьютер</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Сауна</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Электроплита</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Тостер</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Фен</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Посудомоечная машина</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Кофеварка</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Посуда</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox">Камин</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Домофон</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Вахтер</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Шампунь</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Плечики</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Утюг</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Домашний кинотеатр</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Газовая плита</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Бойлер</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Духовка</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Спутниковое телевидение</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Парковка платная</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Электрочайник</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Сигнализация</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Бронедверь</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Сейф</label>
+                  </div>
+                </div>
+              </div>
+              <h5 class="text-left">Особенности</h5>
+              <span>Удобства для людей с ограниченными возможностями или специальными потребностями.</span>
+              <hr>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox">Подходит для детей/семей</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Можно курить</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Подходит для проведения мероприятий</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Можно с питомцами</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Тут есть домашние животные</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox">Подходит людям с ограниченными возможностями</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-default pull-left">Назад</button>
+          <button class="btn btn-default pull-right">Далее</button>
+        </div>
+        <div class="col-md-3">
+          <div class="prompts-box">
+            <div class="prompts-box-icon">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </div>
+            <div class="prompts-info">
+              <h4 class="text-center">Общие удобства</h4>
+              <p>Путешевственники фильтруют результаты поиска по необходимым удобствам, так что постарайтесь отметить все, что вы готовы предложить.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="photo-create-object">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h5 class="text-center">Фотографии позволяют жильцам увидеть все преимущества вашего жилья.</h5>
+              <hr>
+              <div class="row">
+                <div class="col-md-4"><h6 class="text-center">В результатах поиска показывается первая фотография!</h6></div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="images/rxu/kvartira1.jpg" alt="main-photo-of-your-rent-object">
+                    <textarea class="form-control description-object-photo" rows="5" placeholder="Какие особенности вашего жилья видны на этой фотографии?"></textarea>
+                    <button class="btn btn-trash"><i class="glyphicon glyphicon-trash"></i></button>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="images/rxu/add-photo.jpg" alt="add-photo-of-your-rent-object" class="add-photo-icon">
+                    <span class="block text-center add-photo-wrap">
+                      <a href="#" class="underline-link">
+                        <i class="glyphicon glyphicon-plus"></i>
+                        Добавить фото
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-default pull-left">Назад</button>
+          <button class="btn btn-default pull-right">Далее</button>
+        </div>
+        <div class="col-md-3">
+          <div class="prompts-box photo">
+            <div class="prompts-box-icon">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </div>
+            <div class="prompts-info">
+              <h4 class="text-center">Гости любят фотографии</h4>
+              <p>Следите за уровнем освещенности на фотографиях.</p>
+              <p>Фотографии со смартфона вполне подходят.</p>
+              <p>Узнайте больше в нашем <a href="#">Центре помощи.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="safety-create-object">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4>Безопасность жилья</h4>
+              <h6>Чрезвычайные ситуации, хоть и нечасто, но случаются. Пусть гости будут к ним готовы.</h6>
+              <hr>
+              <h4>Инструкция по технике безопасности</h4>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Датчик дыма <i class="glyphicon glyphicon-question-sign"></i>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Детектор угарного газа <i class="glyphicon glyphicon-question-sign"></i>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Аптечка
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Памятка безопасности <i class="glyphicon glyphicon-question-sign"></i>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Огнетушитель
+                </label>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-default pull-left">Назад</button>
+          <button class="btn btn-default pull-right">Далее</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="prices-create-object">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="panel panel-default price">
+            <div class="panel-body">
+              <h4>Установите суточную цену за свое жилье</h4>
+              <h6>Вы можете установить цену, которая отражает уровень вашего жилья, наличие удобств и гостеприимства, которое вы предлагаете.</h6>
+              <hr>
+              <h4>Базовая цена</h4>
+              <span class="inline-block">Цена за ночь</span>
+              <form>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="prise-per-night">₴</span>
+                      <input type="number" class="form-control" aria-describedby="prise-per-night">
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    Рекомендуемая цена: ₴960 <i class="glyphicon glyphicon-question-sign"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="control-label" for="select-currency">Валюта</label>
+                      <select name="select" size="1" class="form-control" id="select-currency">
+                        <option selected value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="panel panel-default price">
+            <div class="panel-body">
+              <h4>Цены на долгосрочную аренду</h4>
+              <form>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="prise-per-night">₴</span>
+                      <input type="number" class="form-control" aria-describedby="prise-per-night">
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    Рекомендуемая цена: ₴20160 <i class="glyphicon glyphicon-question-sign"></i>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="control-label" for="prepayment-period">Предоплата / Залог</label>
+                      <select name="select" size="1" class="form-control" id="prepayment-period">
+                        <option selected value="month">за месяц</option>
+                        <option value="two-months">за два месяца</option>
+                        <option value="contractual">договорная</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="control-label" for="bill">Оплата счетов</label>
+                      <select name="select" size="1" class="form-control" id="bill">
+                        <option selected value="separately">отдельно</option>
+                        <option value="in-the-price">включено в цену</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="control-label" for="select-currency">Валюта</label>
+                      <select name="select" size="1" class="form-control" id="select-currency">
+                        <option selected value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <button class="btn btn-default pull-left">Назад</button>
+          <button class="btn btn-default pull-right">Далее</button>
+        </div>
+        <div class="col-md-3">
+          <div class="prompts-box price-per-night">
+            <div class="prompts-box-icon">
+              <span class="glyphicon glyphicon-info-sign"></span>
+            </div>
+            <div class="prompts-info">
+              <h4 class="text-center">Цена за ночь</h4>
+              <p>Некоторые хозяева начинают с более низкой цены и повышают ее, получив отличные отзывы. После публикации вы всегда сможете скоректировать цену для каких-то дней, чтобы учесть сезонные изменения спроса.</p>
+              <p>Больше информации о <a href="#">плате за уборку</a> и <a href="#">настройках цен</a> - можно будет скорректировать их в опубликованном объявлении.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="calendar-create-object">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4>Подскажите путешественникам, когда ваше жилье свободно для бронирования</h4>
+              <h6>Самый важный шаг в приеме гостей - точное ведение актуального календаря.</h6>
+              <h4>Когда вы доступны?</h4>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="images/rxu/calendar25.png" alt="free-date-for-rent" class="calendar-img">
+                    <button class="btn-success btn-success-circle"><i class="glyphicon glyphicon-ok"></i></button>
+                    <div class="caption">
+                      <h4 class="text-center">Всегда</h4>
+                      <p class="text-center">Ваше жилье можно забронировать на любую дату.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="images/rxu/calendar25.png" alt="free-date-for-rent" class="calendar-img">
+                    <div class="caption">
+                      <h4 class="text-center">Иногда</h4>
+                      <p class="text-center">Забронировать даты, в которые вы не можете принимать гостей.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="images/rxu/calendar25.png" alt="free-date-for-rent" class="calendar-img">
+                    <div class="caption">
+                      <h4 class="text-center">Один раз</h4>
+                      <p class="text-center">Принять гостей только в один период времени.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <form>
+                    <div class="form-group">
+                      <label class="control-label" for="object-status">Статус жилья</label>
+                      <select name="select" size="1" class="form-control" id="object-status">
+                        <option selected value="status-on">доступно для поиска</option>
+                        <option value="status-off">не доступно для поиска</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-default pull-left">Назад</button>
+          <button class="btn btn-default pull-right">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="object-preview">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="object-preview-header-wrapper clearfix">
+            <div class="pull-left">
+              <img src="images/rxu/avatar.jpg" alt="my avatar">
+              <p class="text-center small-margin-top">Vita</p>
+            </div>
+            <div>
+              <h4 class="inline-block no-margin">отличный загородный дом</h4>
+              <div class="star-wrapper inline-block">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <span>(4)</span>
+              <p class="geographical-position small-margin-top">Киев, Украина</p>
+              <div class="row">
+                <div class="col-md-2 text-center">
+                  <i class="fa fa-home"></i>
+                  <p>Дом целиком</p>
+                </div>
+                <div class="col-md-2 text-center">
+                  <i class="fa fa-users"></i>
+                  <p>16 гостей</p>
+                </div>
+                <div class="col-md-2 text-center">
+                  <i class="fa fa-clone"></i>
+                  <p>5 спален</p>
+                </div>
+                <div class="col-md-2 text-center">
+                  <i class="fa fa-bed"></i>
+                  <p>14 кроватей</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"><a href="#" class="underline-link">Свяжитесь с хозяином</a></div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3">Жилье</div>
+                <div class="col-md-5">
+                  <p class="no-margin"> Вмещает гостей: <span class="strong">3</span></p>
+                  <p class="no-margin"> Количество ванных комнат: <span class="strong">1</span></p>
+                  <p class="no-margin"> Количество спален: <span class="strong">1</span></p>
+                  <p class="no-margin"> Кроватей: <span class="strong">2</span></p>
+                  <p class="no-margin"> Время прибытия: <span class="strong">13:00</span></p>
+                </div>
+                <div class="col-md-4">
+                  <p class="no-margin"> Время выезда: <span class="strong">12:00</span></p>
+                  <p class="no-margin"> Наличие питомцев: <span class="strong">кошка и другие животные</span></p>
+                  <p class="no-margin"> Тип размещения: <span class="strong">Вилла</span></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">Удобства</div>
+                <div class="col-md-5">
+                  <p class="strong">Кухня</p>
+                  <p class="strong">Интернет</p>
+                  <p class="strong">Телевизор</p>
+                  <p class="strong">Туалетные принадлежности</p>
+                  <p class="strong">Шампунь</p>
+                  <p class="strong">Отопление</p>
+                  <p class="no-comfort">Кондиционер</p>
+                  <p class="strong">Стиральная машинка</p>
+                  <p class="strong">Сушильная машинка</p>
+                  <p class="strong">Бесплатная парковка</p>
+                  <p class="strong">Беспроводной интернет</p>
+                  <p class="no-comfort">Кабельное телевидение</p>
+                  <p class="no-comfort">Завтрак</p>
+                  <p class="strong">Можно с питомцами</p>
+                  <p class="strong">Подходит для детей/семей</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="strong">Подходит для проведения мероприятий</p>
+                  <p class="no-comfort">Можно курить</p>
+                  <p class="no-comfort">Подходит людям с ограниченными возможностями</p>
+                  <p class="no-comfort">Лифт</p>
+                  <p class="no-comfort">Камин</p>
+                  <p class="no-comfort">Домофон</p>
+                  <p class="no-comfort">Вахтер</p>
+                  <p class="no-comfort">Бассейн</p>
+                  <p class="no-comfort">Джакузи</p>
+                  <p class="strong">Спортзал</p>
+                  <p class="no-comfort">Прибытие круглосуточно</p>
+                  <p class="no-comfort">Плечики</p>
+                  <p class="no-comfort">Утюг</p>
+                  <p class="no-comfort">Фен</p>
+                  <p class="no-comfort">Место для работы на ноутбуке</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">Цены</div>
+                <div class="col-md-5">
+                  <p>Доплата за каждого последующего гостя: <span class="strong">$10 / ночь после 2 гостей</span></p>
+                  <p>Плата за уборку: <span class="strong">$30</span></p>
+                  <p>Залог за сохранность имущества: <span class="strong">$100</span></p>
+                </div>
+                <div class="col-md-4">
+                  <p>Скидка за неделю: <span class="strong">18%</span></p>
+                  <p>Скидка за месяц: <span class="strong">0%</span></p>
+                  <p>Отмена бронирования: <a href="#">Умеренные</a></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">Описание</div>
+                <div class="col-md-9">
+                  <p class="strong">Жилье</p>
+                  <p>Шикарная, просторная квартира. В квартире выполнен качественный ремонт. Есть вся необходимая мебель и техника от лучших производителей. Очень развита инфраструктура района. Во дворе бесплатная парковка. Рядом станция метро.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">Устройства безопасности</div>
+                <div class="col-md-9">Аптечка</div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-3">Свободные дни</div>
+                <div class="col-md-5">
+                  <span class="strong">3 ночи -</span> <span>минимальная продолжительность бронирования</span>
+                </div>
+                <div class="col-md-4">
+                  <a href="#">Смотреть календарь</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Пока нет отзывов</h3>
+            </div>
+            <div class="panel-body">
+              Остановитесь здесь, и вы сможете написать хозяину его первый отзыв!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="owner-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-7">
+          <div class="owner-info-wrapper">
+            <h4>О хозяине Andy</h4>
+            <div class="row">
+              <div class="col-md-3">
+                <img src="images/rxu/avatar.jpg" alt="my avatar">
+              </div>
+              <div class="col-md-4">
+                <p>UA</p>
+                <p>Участник с: октябрь 2015</p>
+                <button class="btn btn-standart">Свяжитесь с хозяином</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="similar-ads">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="similar-ads-wrapper">
+            <h4>Похожие объявления</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img src="images/rxu/kvartira11.jpg" alt="first apartment">
+                  <i class="glyphicon glyphicon-heart like-apartment" role="button"></i>
+                  <button class="button-apartment-price"><span>$</span><span>18</span></button>
+                  <div class="caption">
+                    <h5 class="hide-part-text">Комната-студия в гостепримной квартире с хозяевами</h5>
+                    <p>Отдельная комната - в 8.8 километров</p>
+                    <img src="images/rxu/ava1.jpg" class="round-avatar">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img src="images/rxu/kvartira1.jpg" alt="second apartment">
+                  <i class="glyphicon glyphicon-heart like-apartment" role="button"></i>
+                  <button class="button-apartment-price"><span>$</span><span>17</span></button>
+                  <div class="caption">
+                    <h5 class="hide-part-text">Однокомнатная квартира с большими окнами</h5>
+                    <p>Дом/квартира целиком - в 7.8 километров</p>
+                    <img src="images/rxu/ava2.jpg" class="round-avatar">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img src="images/rxu/kvartira1111.jpg" alt="third apartment">
+                  <i class="glyphicon glyphicon-heart like-apartment" role="button"></i>
+                  <button class="button-apartment-price"><span>$</span><span>20</span></button>
+                  <div class="caption">
+                    <h5 class="hide-part-text">Nice apartment+quest district</h5>
+                    <p>Дом/квартира целиком - в 9.2 километров</p>
+                    <img src="images/rxu/ava3.jpg" class="round-avatar">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="object-list">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Ваши объявления</h5>
+          <p>Требования к бронированию</p>
+          <button class="btn btn-standart small-margin-top">Добавить объявление</button>
+        </div>
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Ваша недвижимость</h3>
+            </div>
+            <div class="panel-body">
+              <div class="my-apartment-photo-wrapper inline-block">
+                <img src="images/rxu/home.jpg" alt="my-home">
+              </div>
+              <div class="my-apartment-info-wrapper inline-block clearfix">
+                <button class="delete-rent-object btn-danger pull-right">
+                  <i class="glyphicon glyphicon-remove"></i>
+                </button>
+                <h4 class="no-margin">отличный загородный дом</h4>
+                <div class="small-margin-top"><a href="#" class="underline-link">Управление объявлением и календарем</a></div>
+                <p class="small-margin-top">
+                  <button class="online-apartment">
+                    <i class="glyphicon glyphicon-ok"></i> 
+                  </button>
+                  Доступно для аренды/бронирования
+                </p>
+              </div>
+              <hr>
+              <div class="my-apartment-photo-wrapper inline-block">
+                <img src="images/rxu/my-apartment.jpg" alt="my-apartment">
+              </div>
+              <div class="my-apartment-info-wrapper inline-block clearfix">
+                <button class="delete-rent-object btn-danger pull-right">
+                  <i class="glyphicon glyphicon-remove"></i>
+                </button>
+                <h4 class="no-margin">уютная квартирка</h4>
+                <div class="small-margin-top"><a href="#" class="underline-link">Управление объявлением и календарем</a></div>
+                <p class="small-margin-top">
+                  <button class="online-apartment">
+                    <i class="glyphicon glyphicon-remove"></i> 
+                  </button>
+                  Не сдается/офлайн
+                </p> 
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Профиль подтвержден</h3>
+            </div>
+            <div class="panel-body">
+              <p>Попросите гостя подтвердить свои данные перед бронированием. 
+                <a href="#">Узнайте больше</a>
+              </p>
+              <p>Перед тем, как просить гостей подтвердить свои данные, вы должны подтвердить свои!</p>
+              <p><a href="#">Подтвердите свой профиль,</a> чтобы активировать данное требование.</p>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Попросить гостей пройти ряд подтверждений
+                </label>
+              </div>
+              <hr>
+              <button class="btn btn-standart">Сохранить требования к бронированию</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <div class="prompts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-info">
+            <div class="panel-heading clearfix">
+              <h3 class="panel-title">$16 <span class="pull-right">За Сутки</span></h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  Прибытие <br>
+                  <input type="date" name="arrival" class="form-control">
+                </div>
+                <div class="col-md-4">
+                  Выезд <br>
+                  <input type="date" name="exit" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  Гости <br>
+                  <select name="select" size="1" class="form-control">
+                    <option selected value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                  </select>
+                </div>
+              </div>
+              <table class="table small-margin-top">
+                <tr>
+                  <td>$16×12 суток</td>
+                  <td>$192</td>
+                </tr>
+                <tr>
+                  <td>Плата за услуги RXU <i class="glyphicon glyphicon-question-sign"></i></td>
+                  <td>$23</td>
+                </tr>
+                <tr>
+                  <td>Итого</td>
+                  <td>$215</td>
+                </tr>
+              </table>
+              <button class="btn btn-standart form-control">Запросите бронирование</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">© 2016 <a href="#">RXU.</a> All Rights Reserved</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <ul class="pull-right no-margin">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fag</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>

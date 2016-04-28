@@ -1,0 +1,291 @@
+section {
+	padding: 70px 0;
+}
+
+section.main-page {
+	background: url("/images/rxu/home.png") no-repeat 50%;
+	background-size: cover;
+	height: 730px;
+	width: $max-width;
+	position: relative;
+
+	div.container {
+		
+		div.main-content {
+			margin-top: 150px;
+			color: $color-white;
+
+			a.btn-main-page {
+			    margin-top: 25px;
+
+			    &:hover {
+			    	text-decoration: none;
+			    	color: $color-white;
+			    }
+			}
+
+			h1 {
+				font-size: $font-size-base / 0.44;
+			}
+
+			h2 {
+				font-size: $font-size-base / 0.8;
+			}
+		}
+
+		.row {
+			margin-top: 140px;
+		}
+
+		.col-lg-6:last-child {
+			position: relative;
+		    min-height: 1px;
+		    padding-right: 15px;
+		    padding-left: 15px;
+
+		    div.realtor-img {
+		    	position: absolute;
+
+		    	img {
+		    		display: block;
+				    height: auto;
+				    max-width: 100%;
+		    	}
+		    }
+		}
+	}
+}
+
+section.our-features {
+
+	background: $color-for-section;
+	padding-bottom: 40px;
+
+	div.feature-wrap i {
+		font-size: 48px;
+	    height: 110px;
+	    width: 110px;
+	    margin: 3px;
+	    border-radius: 100%;
+	    line-height: 110px;
+	    text-align: center;
+	    background: $color-white;
+	    color: $accentual-color;
+	    border: 3px solid $color-white;
+	    box-shadow: inset 0 0 0 5px $color-for-section;
+	    float: left;
+	    margin-right: 25px;
+
+    	&:hover {
+	    	background: $accentual-color;
+		    color: $color-white;
+		    box-shadow: inset 0 0 0 5px $accentual-color;
+		    border: 3px solid $accentual-color;
+   		}
+	}
+
+	.feature-wrap {
+
+		margin-bottom: 35px;
+    	overflow: hidden;
+
+		h2 {
+			font-size: $font-size-base / 0.89;
+			margin-top: 10px;
+		}
+
+		h3 {
+			font-size: $font-size-base / 1.14;
+		}
+	}	
+}
+
+div.main-inform, div.our-work div.main-inform {
+
+	text-align: center;
+	color: $color-text-base;
+	padding-bottom: 55px;
+
+	h2 {
+		font-size: $font-size-base / 0.44;
+	    margin-top: 0;
+	    margin-bottom: 20px;
+	    font-weight: 600;
+	}
+
+	p.lead {
+		font-size: $font-size-base;
+	    line-height: 24px;
+	    font-weight: 400;
+	    margin-bottom: 20px;
+	}
+}
+
+section.our-work {
+
+	div.col-lg-3.col-md-3.col-sm-4.col-xs-12 {
+
+		padding: 0;
+
+		div.works-wrap {
+			position: relative;
+
+			&:hover .overlay {
+				opacity:1;
+			}
+
+			img.img-responsive {
+				width: 100%;
+			}
+
+			div.overlay {
+				position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    opacity: 0;
+			    border-radius: 0;
+			    background: $accentual-color;
+			    color: $color-white;
+			    vertical-align: middle;
+			    transition: opacity 500ms;
+			    padding: 30px;
+			}
+
+			div.recent-work-inner {
+				top: 0;
+			    background: transparent;
+			    opacity: .8;
+			    width: 100%;
+			    border-radius: 0;
+			    margin-bottom: 0;
+
+			    h3 {
+			    	margin: 10px 0;
+			    	font-size: $font-size-base;
+			    	font-weight: 400;
+
+			    	a {
+			    		font-size: $font-size-base / 0.66;
+    					color: $color-white;
+
+    					&:hover {
+				    		text-decoration: none;
+				    	}
+			    	}
+
+			    }
+
+			    a.preview {
+				    bottom: 0;
+				    display: inline-block;
+				    height: 35px;
+				    line-height: 35px;
+				    border-radius: 0;
+				    background: transparent;
+				    text-align: center;
+				    color: $color-white;
+
+				    &:hover {
+				    	text-decoration: none;
+				    }
+
+				    i {
+				    	margin-right: 3px;
+				    }
+				}
+			}
+		}
+	}
+}
+
+section.services {
+
+	background: $primary-color-black url("/images/rxu/bg_services.png");
+	background-size: cover;
+
+	div.main-inform {
+		color: $color-white;
+	}
+
+	div.services-wrap {
+	    padding: 40px 30px;
+	    background: $color-white;
+	    border-radius: 4px;
+	    margin: 0 0 40px;
+	    color: $color-grey;
+	}
+}
+
+.pull-left {
+	margin-right: 20px;
+}
+
+.rxu section.contact-inform {
+	background: url("/images/rxu/contact.png") no-repeat;
+	background-position: 90% 0;
+	padding: 30px 0;
+
+	div.contact-info {
+
+		i {
+			width: 60px;
+		    height: 60px;
+		    font-size: $font-size-base / 0.4;
+		    line-height: 60px;
+		    color: $color-white;
+		    background: $primary-color-black;
+		    text-align: center;
+		    border-radius: 10px;
+		}
+
+	    h2 {
+	    	margin-top: 0;
+	    	color: $primary-color-black;
+	    	font-size: $font-size-base / 0.8;
+	    }
+	}
+}
+
+section.bottom {
+
+	background: $primary-color-second;
+	border-bottom: 5px solid $accentual-color;
+
+	li {
+		display: block;
+    	padding: 5px 0;
+		list-style: none;
+
+		a {
+			text-decoration: none;
+			color: $color-grey;
+
+			&:hover {
+				color: $accentual-color;
+			}
+		}
+	}
+}
+
+footer {
+	background: $primary-color-black;
+	color: $color-white;
+	padding: 30px 0 30px 0;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	a {
+		color: $color-white;
+
+		&:hover {
+			text-decoration: none;
+			color: $accentual-color;
+		}
+	}
+}

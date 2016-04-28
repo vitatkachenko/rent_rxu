@@ -1,0 +1,512 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>rxu</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body class="rxu">
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <span class="support-contacts"><i class="glyphicon glyphicon-earphone"></i>+380123456789</span>
+        <div class="pull-right clearfix">
+          <div class="dropdown sign-in-block inline-block">
+            <button class="signin-button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <a href="#" class="top-bar-main-link">Sign in</a> 
+              <i class="glyphicon glyphicon-log-in signin-icon signin-icon"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <div class="panel-title">Sign in</div>
+                  <div class="forgot-password-field"><a href="#" class="underline-link">Forgot password?</a></div>
+                </div>
+                <div class="panel-body">
+                  <form class="form-horizontal clearfix">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input type="text" class="form-control" placeholder="username or email">
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="input-group">
+                     <div class="checkbox"><label><input type="checkbox">Remember me</label></div>
+                    </div>
+                    <div class="form-group clearfix">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <a class="btn btn-success" href="#">Login</a>
+                        <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-vk"><i class="fa fa-vk"></i></a>
+                        <a class="btn btn-social-icon btn-google"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                      </div>
+                    </div>
+                    <div class="form-group clearfix">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="signup-field">
+                          Don't have an account! <a href="#" class="underline-link">Sign Up Here</a>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-block">
+            <span data-toggle="modal" data-target="#registerModal"><a href="#" class="top-bar-main-link">Register</a></span>
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content clearfix">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Register</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="info-block">
+                          Sign in using the following service:
+                        </div>
+                        <div class="register-social text-center ">
+                          <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                          <a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                          <a class="btn btn-social-icon btn-google"><i class="fa fa-google-plus"></i></a>
+                          <a class="btn btn-social-icon btn-vk"><i class="fa fa-vk"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-md-8 register-forms">
+                        <form class="form-horizontal">
+                          <div class="form-group">
+                            <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
+                              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword" class="col-sm-3 control-label">Password</label>
+                            <div class="col-sm-9">
+                              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputPassword" class="col-sm-3 control-label">Confirm</label>
+                            <div class="col-sm-9">
+                              <input type="password" class="form-control" id="inputPassword" placeholder="Re-enter password">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-9 pull-right">
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox">I have read and agree to<a href="#" class="underline-link"> the terms of use.</a>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <span class="pull-left">I already have an account<a href="#" class="underline-link">Sign In</a></span>
+                    <button class="btn btn-standart">Register</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->  
+          </div>
+        </div> 
+      </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">site brand</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Blog Single</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">404</a></li>
+                <li><a href="#">Shortcodes</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-->
+    </nav>
+  </header>
+  <section class="main-page no-margin">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="main-content">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+            <h2>Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
+            <a href="#" class="btn btn-standart">Read more</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="realtor-img">
+            <img src="/images/rxu/img1.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-features">
+    <div class="container">
+      <div class="main-inform">
+        <h2>Features</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="feature-wrap">
+            <i class="glyphicon glyphicon-search"></i>
+            <h2>Lorem ipsum</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="feature-wrap">
+            <i class="glyphicon glyphicon-user"></i>
+            <h2>Lorem ipsum</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="feature-wrap">
+            <i class="glyphicon glyphicon-eye-open"></i>
+            <h2>Lorem ipsum</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="feature-wrap">
+            <i class="glyphicon glyphicon-pencil"></i>
+            <h2>Lorem ipsum</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="feature-wrap">
+            <i class="glyphicon glyphicon-phone"></i>
+            <h2>Lorem ipsum</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <div class="feature-wrap">
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+            <h2>Lorem ipsum</h2>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-work">
+    <div class="container">
+      <div class="main-inform">
+        <h2>Our work</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item1.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item2.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item3.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item4.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item5.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item6.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item7.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+          <div class="works-wrap">
+            <img class="img-responsive" src="/images/rxu/item8.png">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3><a href="#">Lorem ipsum</a></h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                <a class="preview" href="#"><i class="glyphicon glyphicon-eye-open"></i>View</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <div class="main-inform">
+        <h2>Our service</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="services-wrap">
+            <div class="pull-left"><img class="img-responsive" src="/images/rxu/services1.png"></div>
+            <div class="media-body">
+              <h3 class="media-heading">Apartments for Rent</h3>
+              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="services-wrap">
+            <div class="pull-left"><img class="img-responsive" src="/images/rxu/services2.png"></div>
+            <div class="media-body">
+              <h3 class="media-heading">Apartments for Rent</h3>
+              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="services-wrap">
+            <div class="pull-left"><img class="img-responsive" src="/images/rxu/services3.png"></div>
+            <div class="media-body">
+              <h3 class="media-heading">Apartments for Rent</h3>
+              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="services-wrap">
+            <div class="pull-left"><img class="img-responsive" src="/images/rxu/services4.png"></div>
+            <div class="media-body">
+              <h3 class="media-heading">Apartments for Rent</h3>
+              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="services-wrap">
+            <div class="pull-left"><img class="img-responsive" src="/images/rxu/services5.png"></div>
+            <div class="media-body">
+              <h3 class="media-heading">Apartments for Rent</h3>
+              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="services-wrap">
+            <div class="pull-left"><img class="img-responsive" src="/images/rxu/services6.png"></div>
+            <div class="media-body">
+              <h3 class="media-heading">Apartments for Rent</h3>
+              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-inform">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+          <div class="contact-info">
+            <div class="pull-left"><i class="glyphicon glyphicon-earphone"></i></div>
+            <div class="media-body">
+              <h2>Have a question or need a custom quote?</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation +0123 456 70 80</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Company</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Support</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Developers</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="wiget">
+            <h3 class="text-uppercase">Our partners</h3>
+            <ul class="no-margin">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Meet the team</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">© 2016 <a href="#">RXU.</a> All Rights Reserved</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <ul class="pull-right no-margin">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fag</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
